@@ -1,0 +1,9 @@
+0.7
+2020.2
+Jun 16 2026
+11:10:11
+C:/Users/ddebr/Verilog/project_2/project_2.sim/sim_1/impl/func/xsim/tb_addersubtractor4Bit_func_impl.v,1790120914,verilog,,C:/Users/ddebr/Verilog/project_2/project_2.srcs/sources_1/new/AdderSubtractor4bit.v,,TopLevel;glbl;ip_clk_div;sev_seg_with_clk;sev_seg_with_clk_top,,,../../../../../../../../../AMDDesignTools/2026.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/ddebr/Verilog/project_2/project_2.srcs/sim_1/new/tb_addersubtractor.v,1790119060,verilog,,,,tb_addersubtractor4Bit,,,../../../../../../../../../AMDDesignTools/2026.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/ddebr/Verilog/project_2/project_2.srcs/sources_1/new/AdderSubtractor4bit.v,1790005101,verilog,,C:/Users/ddebr/Verilog/project_2/project_2.srcs/sources_1/new/FullAdder.v,,AdderSubtractor4bit,,,../../../../../../../../../AMDDesignTools/2026.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/ddebr/Verilog/project_2/project_2.srcs/sources_1/new/FullAdder.v,1788371517,verilog,,C:/Users/ddebr/Verilog/project_2/project_2.srcs/sources_1/new/HalfAdder.v,,FullAdder,,,../../../../../../../../../AMDDesignTools/2026.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/ddebr/Verilog/project_2/project_2.srcs/sources_1/new/HalfAdder.v,1788368011,verilog,,C:/Users/ddebr/Verilog/project_2/project_2.srcs/sim_1/new/tb_addersubtractor.v,,HalfAdder,,,../../../../../../../../../AMDDesignTools/2026.1/Vivado/data/rsb/busdef,,,,,

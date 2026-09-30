@@ -1,0 +1,16 @@
+0.7
+2020.2
+Jun 16 2026
+11:10:11
+C:/Users/ddebr/Verilog/project_2/project_2.sim/sim_1/behav/xsim/glbl.v,1773749341,verilog,,,,glbl,,,,,,,,
+C:/Users/ddebr/Verilog/project_2/project_2.srcs/sim_1/new/tb_addersubtractor.v,1788975043,verilog,,,,tb_addersubtractor4Bit,,,../../../../../../../../AMDDesignTools/2026.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/ddebr/Verilog/project_2/project_2.srcs/sim_1/new/tb_fulladder.v,1788372355,verilog,,,,tb_fulladder,,,../../../../../../../../AMDDesignTools/2026.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/ddebr/Verilog/project_2/project_2.srcs/sim_1/new/tb_halfadder.v,1788368537,verilog,,,,tb_halfadder,,,../../../../../../../../AMDDesignTools/2026.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/ddebr/Verilog/project_2/project_2.srcs/sim_1/new/tb_seven_seg.v,1790120019,verilog,,,,tb_seven_seg,,,../../../../../../../../AMDDesignTools/2026.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/ddebr/Verilog/project_2/project_2.srcs/sources_1/new/AdderSubtractor4bit.v,1790005101,verilog,,C:/Users/ddebr/Verilog/project_2/project_2.srcs/sources_1/new/FullAdder.v,,AdderSubtractor4bit,,,../../../../../../../../AMDDesignTools/2026.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/ddebr/Verilog/project_2/project_2.srcs/sources_1/new/FullAdder.v,1788371517,verilog,,C:/Users/ddebr/Verilog/project_2/project_2.srcs/sources_1/new/HalfAdder.v,,FullAdder,,,../../../../../../../../AMDDesignTools/2026.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/ddebr/Verilog/project_2/project_2.srcs/sources_1/new/HalfAdder.v,1788368011,verilog,,C:/Users/ddebr/Verilog/project_2/project_2.srcs/sim_1/new/tb_addersubtractor.v,,HalfAdder,,,../../../../../../../../AMDDesignTools/2026.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/ddebr/Verilog/project_2/project_2.srcs/sources_1/new/ip_clk_div.v,1789589432,verilog,,C:/Users/ddebr/Verilog/project_2/project_2.srcs/sources_1/new/sev_seg_decoder.v,,ip_clk_div,,,../../../../../../../../AMDDesignTools/2026.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/ddebr/Verilog/project_2/project_2.srcs/sources_1/new/sev_seg_decoder.v,1789576254,verilog,,C:/Users/ddebr/Verilog/project_2/project_2.srcs/sources_1/new/sev_seg_with_clk.v,,sev_seg_decoder,,,../../../../../../../../AMDDesignTools/2026.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/ddebr/Verilog/project_2/project_2.srcs/sources_1/new/sev_seg_with_clk.v,1790001513,verilog,,C:/Users/ddebr/Verilog/project_2/project_2.srcs/sources_1/new/sev_seg_with_clk_top.v,,sev_seg_with_clk,,,../../../../../../../../AMDDesignTools/2026.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/ddebr/Verilog/project_2/project_2.srcs/sources_1/new/sev_seg_with_clk_top.v,1789954529,verilog,,C:/Users/ddebr/Verilog/project_2/project_2.srcs/sim_1/new/tb_seven_seg.v,,sev_seg_with_clk_top,,,../../../../../../../../AMDDesignTools/2026.1/Vivado/data/rsb/busdef,,,,,

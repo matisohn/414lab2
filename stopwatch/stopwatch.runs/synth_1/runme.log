@@ -1,0 +1,300 @@
+
+*** Running vivado
+    with args -log StopwatchTOP.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source StopwatchTOP.tcl
+
+
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 31-aug-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Tue Sep 29 16:51:05 2026
+# Process ID         : 19388
+# Current directory  : C:/Users/ddebr/Verilog/stopwatch/stopwatch.runs/synth_1
+# Command line       : vivado.exe -log StopwatchTOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source StopwatchTOP.tcl
+# Log file           : C:/Users/ddebr/Verilog/stopwatch/stopwatch.runs/synth_1/StopwatchTOP.vds
+# Journal file       : C:/Users/ddebr/Verilog/stopwatch/stopwatch.runs/synth_1\vivado.jou
+# Running On         : laptopDeDylan
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13620H
+# CPU Frequency      : 2918 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 33960 MB
+# Swap memory        : 6930 MB
+# Total Virtual      : 40890 MB
+# Available Virtual  : 3537 MB
+#-----------------------------------------------------------
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Tue Sep 29 16:51:05 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source StopwatchTOP.tcl -notrace
+create_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 582.164 ; gain = 267.312
+Command: synth_design -top StopwatchTOP -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5008] Incremental synthesis strategy default
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 41016
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1373.566 ; gain = 576.188
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-10929] literal value 'b1011 truncated to fit in 3 bits [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/sev_seg_with_clk.v:55]
+WARNING: [Synth 8-10929] literal value 'b1101 truncated to fit in 3 bits [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/sev_seg_with_clk.v:57]
+WARNING: [Synth 8-10929] literal value 'b1110 truncated to fit in 3 bits [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/sev_seg_with_clk.v:59]
+INFO: [Synth 8-11241] undeclared symbol 'tenSecCLK', assumed default net type 'wire' [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/StopwatchTOP.v:65]
+INFO: [Synth 8-11241] undeclared symbol 'secDigit2', assumed default net type 'wire' [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/StopwatchTOP.v:94]
+INFO: [Synth 8-6157] synthesizing module 'StopwatchTOP' [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/StopwatchTOP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ip_clock_div_top' [C:/Users/ddebr/Verilog/stopwatch/stopwatch.runs/synth_1/.Xil/Vivado-19388-laptopDeDylan/realtime/ip_clock_div_top_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ip_clock_div_top' (0#1) [C:/Users/ddebr/Verilog/stopwatch/stopwatch.runs/synth_1/.Xil/Vivado-19388-laptopDeDylan/realtime/ip_clock_div_top_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'get_clk' [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/get_clk.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'get_clk' (0#1) [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/get_clk.v:23]
+INFO: [Synth 8-6157] synthesizing module 'get_clk__parameterized0' [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/get_clk.v:23]
+	Parameter NBIT bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'get_clk__parameterized0' (0#1) [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/get_clk.v:23]
+INFO: [Synth 8-6157] synthesizing module 'get_clk__parameterized1' [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/get_clk.v:23]
+	Parameter NBIT bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'get_clk__parameterized1' (0#1) [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/get_clk.v:23]
+INFO: [Synth 8-6157] synthesizing module 'get_digit' [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/get_digit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'get_digit' (0#1) [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/get_digit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'get_digit__parameterized0' [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/get_digit.v:23]
+	Parameter MAX bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'get_digit__parameterized0' (0#1) [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/get_digit.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'digit' does not match port width (4) of module 'get_digit__parameterized0' [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/StopwatchTOP.v:94]
+INFO: [Synth 8-6157] synthesizing module 'sev_seg_with_clk_top' [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/sev_seg_with_clk_top.v:21]
+INFO: [Synth 8-6157] synthesizing module 'sev_seg_with_clk' [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/sev_seg_with_clk.v:21]
+INFO: [Synth 8-6157] synthesizing module 'sev_seg_decoder' [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/sev_seg_decoder.v:21]
+INFO: [Synth 8-226] default block is never used [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/sev_seg_decoder.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'sev_seg_decoder' (0#1) [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/sev_seg_decoder.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'sev_seg_with_clk' (0#1) [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/sev_seg_with_clk.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'sev_seg_with_clk_top' (0#1) [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/sev_seg_with_clk_top.v:21]
+WARNING: [Synth 8-689] width (1) of port connection 'num_3' does not match port width (4) of module 'sev_seg_with_clk_top' [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/StopwatchTOP.v:107]
+INFO: [Synth 8-6155] done synthesizing module 'StopwatchTOP' (0#1) [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/StopwatchTOP.v:23]
+WARNING: [Synth 8-7129] Port on_switch in module StopwatchTOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port blink_switch in module StopwatchTOP is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1494.168 ; gain = 696.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1494.168 ; gain = 696.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1494.168 ; gain = 696.789
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1494.168 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/ddebr/Verilog/stopwatch/stopwatch.gen/sources_1/ip/ip_clock_div_top/ip_clock_div_top/ip_clock_div_top_in_context.xdc] for cell 'clk_5M'
+Finished Parsing XDC File [c:/Users/ddebr/Verilog/stopwatch/stopwatch.gen/sources_1/ip/ip_clock_div_top/ip_clock_div_top/ip_clock_div_top_in_context.xdc] for cell 'clk_5M'
+Parsing XDC File [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/constrs_1/new/Stopwatchconstraints.xdc]
+Finished Parsing XDC File [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/constrs_1/new/Stopwatchconstraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/constrs_1/new/Stopwatchconstraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/StopwatchTOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/StopwatchTOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1560.945 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1560.980 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1560.980 ; gain = 763.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1560.980 ; gain = 763.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1560.980 ; gain = 763.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1560.980 ; gain = 763.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    3 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input    4 Bit        Muxes := 4     
+	   4 Input    4 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design StopwatchTOP has port led_disable[3] driven by constant 1
+WARNING: [Synth 8-3917] design StopwatchTOP has port led_disable[2] driven by constant 1
+WARNING: [Synth 8-3917] design StopwatchTOP has port led_disable[1] driven by constant 1
+WARNING: [Synth 8-3917] design StopwatchTOP has port led_disable[0] driven by constant 1
+WARNING: [Synth 8-7129] Port on_switch in module StopwatchTOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port blink_switch in module StopwatchTOP is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1578.301 ; gain = 780.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1716.668 ; gain = 919.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1746.066 ; gain = 948.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1746.066 ; gain = 948.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 2002.172 ; gain = 1204.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 2002.172 ; gain = 1204.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 2002.172 ; gain = 1204.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 2002.172 ; gain = 1204.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 2002.172 ; gain = 1204.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 2002.172 ; gain = 1204.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |ip_clock_div_top |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |ip_clock_div_top |     1|
+|2     |CARRY4           |     9|
+|3     |LUT1             |     7|
+|4     |LUT2             |     7|
+|5     |LUT3             |     5|
+|6     |LUT4             |    24|
+|7     |LUT5             |    11|
+|8     |LUT6             |     2|
+|9     |FDCE             |    18|
+|10    |FDPE             |     4|
+|11    |FDRE             |    47|
+|12    |FDSE             |     1|
+|13    |IBUF             |     1|
+|14    |OBUF             |    16|
++------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 2002.172 ; gain = 1204.793
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:41 . Memory (MB): peak = 2002.172 ; gain = 1137.980
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 2002.172 ; gain = 1204.793
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2011.344 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2015.000 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 16838f03
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+39 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 2015.020 ; gain = 1417.535
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2015.020 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ddebr/Verilog/stopwatch/stopwatch.runs/synth_1/StopwatchTOP.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file StopwatchTOP_utilization_synth.rpt -pb StopwatchTOP_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 29 16:52:16 2026...

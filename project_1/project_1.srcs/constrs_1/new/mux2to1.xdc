@@ -1,0 +1,22 @@
+set_max_delay -from [get_ports {{In[0]} {In[1]} {In[2]} {In[3]} S}] -to [get_ports Out] 20.000
+set_property PACKAGE_PIN V7 [get_ports {In[3]}]
+set_property PACKAGE_PIN R5 [get_ports {In[2]}]
+set_property PACKAGE_PIN R6 [get_ports {In[1]}]
+set_property PACKAGE_PIN R7 [get_ports {In[0]}]
+set_property PACKAGE_PIN T8 [get_ports Out]
+set_property PACKAGE_PIN U8 [get_ports {S[1]}]
+set_property PACKAGE_PIN U9 [get_ports {S[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {In[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {In[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {In[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {In[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports Out]
+set_property IOSTANDARD LVCMOS33 [get_ports {S[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {S[0]}]
+
+set_switching_activity -toggle_rate 0.020 -static_probability 0.500 [get_ports Out]
+set_switching_activity -toggle_rate 0.020 -static_probability 0.500 [get_ports In]
+set_switching_activity -toggle_rate 0.020 -static_probability 0.500 [get_ports S]
+
+set_property LOAD 5 [get_ports Out]
+set_load 5.000 [all_outputs]

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Aug 26 13:13:52 2026
+# Process ID         : 32624
+# Current directory  : C:/Users/ddebr/Verilog/Muxes/Muxes.runs/synth_1
+# Command line       : vivado.exe -log mux2to1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux2to1.tcl
+# Log file           : C:/Users/ddebr/Verilog/Muxes/Muxes.runs/synth_1/mux2to1.vds
+# Journal file       : C:/Users/ddebr/Verilog/Muxes/Muxes.runs/synth_1\vivado.jou
+# Running On         : laptopDeDylan
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13620H
+# CPU Frequency      : 2918 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 33960 MB
+# Swap memory        : 34359 MB
+# Total Virtual      : 68320 MB
+# Available Virtual  : 44025 MB
+#-----------------------------------------------------------
+source mux2to1.tcl -notrace

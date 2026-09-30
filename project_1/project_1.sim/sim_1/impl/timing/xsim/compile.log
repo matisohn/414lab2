@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddebr/Verilog/project_1/project_1.sim/sim_1/impl/timing/xsim/tb_mux2to1_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2to1
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddebr/Verilog/project_1/project_1.srcs/sim_1/new/tb_mux2to1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_mux2to1

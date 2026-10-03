@@ -83,7 +83,7 @@ read_verilog -library xil_defaultlib {
   C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/sev_seg_with_clk_top.v
   C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/new/StopwatchTOP.v
 }
-read_ip -quiet c:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/ip/ip_clock_div_top/ip_clock_div_top.xci
+read_ip -quiet C:/Users/ddebr/Verilog/stopwatch/stopwatch.srcs/sources_1/ip/ip_clock_div_top/ip_clock_div_top.xci
 set_property used_in_implementation false [get_files -all c:/Users/ddebr/Verilog/stopwatch/stopwatch.gen/sources_1/ip/ip_clock_div_top/ip_clock_div_top_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/ddebr/Verilog/stopwatch/stopwatch.gen/sources_1/ip/ip_clock_div_top/ip_clock_div_top.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/ddebr/Verilog/stopwatch/stopwatch.gen/sources_1/ip/ip_clock_div_top/ip_clock_div_top_ooc.xdc]

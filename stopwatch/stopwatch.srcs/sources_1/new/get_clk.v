@@ -20,6 +20,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
+`timescale 1ns / 1ps
+
 module get_clk #(parameter NBIT = 18)(
     input clk_slw,
     input reset,
@@ -27,26 +29,31 @@ module get_clk #(parameter NBIT = 18)(
     input [NBIT-1:0] limit,
     output reg clk_out
     );
+
     reg [NBIT-1:0] clk_counter;
-    
-    always @(posedge clk_slw) begin   
+
+    always @(posedge clk_slw or posedge reset) begin
+
         if (reset) begin
-            clk_counter <= 0;
-            clk_out <= 1;
+            clk_counter <= {NBIT{1'b0}};
+            clk_out     <= 1'b1;
         end
+
         else if (stop) begin
             clk_counter <= clk_counter;
-            clk_out <= clk_out;
+            clk_out     <= clk_out;
         end
-        else if (clk_counter == limit) begin
-            clk_counter <= 0;
-            clk_out <= ~clk_out;
-        end
-        else begin
-            clk_counter <= clk_counter + 1;
-            clk_out <= clk_out;
-        end
-    end
-endmodule
-    
 
+        else if (clk_counter == limit - 1'b1) begin
+            clk_counter <= {NBIT{1'b0}};
+            clk_out     <= ~clk_out;
+        end
+
+        else begin
+            clk_counter <= clk_counter + 1'b1;
+            clk_out     <= clk_out;
+        end
+
+    end
+
+endmodule

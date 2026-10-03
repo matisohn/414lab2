@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
-| Date         : Tue Sep 29 16:54:05 2026
+| Date         : Sat Oct  3 10:38:04 2026
 | Host         : laptopDeDylan running 64-bit major release  (build 9200)
 | Command      : report_methodology -file StopwatchTOP_methodology_drc_routed.rpt -pb StopwatchTOP_methodology_drc_routed.pb -rpx StopwatchTOP_methodology_drc_routed.rpx
 | Design       : StopwatchTOP
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max checks: <unlimited>
-             Checks found: 36
+             Checks found: 33
 +-----------+------------------+-----------------------------+--------+
 | Rule      | Severity         | Description                 | Checks |
 +-----------+------------------+-----------------------------+--------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell | 36     |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell | 33     |
 +-----------+------------------+-----------------------------+--------+
 
 2. REPORT DETAILS
@@ -94,120 +94,105 @@ Related violations: <none>
 
 TIMING-17#13 Critical Warning
 Non-clocked sequential cell  
-The clock pin min_get_clk/clk_counter_reg[2]/C is not reached by a timing clock
+The clock pin min_get_clk/clk_out_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#14 Critical Warning
 Non-clocked sequential cell  
-The clock pin min_get_clk/clk_counter_reg[3]/C is not reached by a timing clock
+The clock pin ms_digit/digit_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#15 Critical Warning
 Non-clocked sequential cell  
-The clock pin min_get_clk/clk_counter_reg[4]/C is not reached by a timing clock
+The clock pin ms_digit/digit_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#16 Critical Warning
 Non-clocked sequential cell  
-The clock pin min_get_clk/clk_out_reg/C is not reached by a timing clock
+The clock pin ms_digit/digit_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#17 Critical Warning
 Non-clocked sequential cell  
-The clock pin ms_digit/digit_reg[0]/C is not reached by a timing clock
+The clock pin ms_digit/digit_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#18 Critical Warning
 Non-clocked sequential cell  
-The clock pin ms_digit/digit_reg[1]/C is not reached by a timing clock
+The clock pin sec2_get_clk/clk_counter_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#19 Critical Warning
 Non-clocked sequential cell  
-The clock pin ms_digit/digit_reg[2]/C is not reached by a timing clock
+The clock pin sec2_get_clk/clk_counter_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#20 Critical Warning
 Non-clocked sequential cell  
-The clock pin ms_digit/digit_reg[3]/C is not reached by a timing clock
+The clock pin sec2_get_clk/clk_counter_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#21 Critical Warning
 Non-clocked sequential cell  
-The clock pin sec2_get_clk/clk_counter_reg[0]/C is not reached by a timing clock
+The clock pin sec2_get_clk/clk_out_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#22 Critical Warning
 Non-clocked sequential cell  
-The clock pin sec2_get_clk/clk_counter_reg[1]/C is not reached by a timing clock
+The clock pin sec_digit1/digit_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#23 Critical Warning
 Non-clocked sequential cell  
-The clock pin sec2_get_clk/clk_counter_reg[2]/C is not reached by a timing clock
+The clock pin sec_digit1/digit_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#24 Critical Warning
 Non-clocked sequential cell  
-The clock pin sec2_get_clk/clk_out_reg/C is not reached by a timing clock
+The clock pin sec_digit1/digit_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#25 Critical Warning
 Non-clocked sequential cell  
-The clock pin sec_digit1/digit_reg[0]/C is not reached by a timing clock
+The clock pin sec_digit1/digit_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#26 Critical Warning
 Non-clocked sequential cell  
-The clock pin sec_digit1/digit_reg[1]/C is not reached by a timing clock
+The clock pin sec_digit2/digit_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#27 Critical Warning
 Non-clocked sequential cell  
-The clock pin sec_digit1/digit_reg[2]/C is not reached by a timing clock
+The clock pin sec_digit2/digit_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#28 Critical Warning
 Non-clocked sequential cell  
-The clock pin sec_digit1/digit_reg[3]/C is not reached by a timing clock
+The clock pin sec_digit2/digit_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#29 Critical Warning
 Non-clocked sequential cell  
-The clock pin sec_digit2/digit_reg[0]/C is not reached by a timing clock
+The clock pin sec_digit2/digit_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#30 Critical Warning
 Non-clocked sequential cell  
-The clock pin sec_digit2/digit_reg[1]/C is not reached by a timing clock
+The clock pin sec_get_clk/clk_counter_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#31 Critical Warning
 Non-clocked sequential cell  
-The clock pin sec_digit2/digit_reg[2]/C is not reached by a timing clock
+The clock pin sec_get_clk/clk_counter_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#32 Critical Warning
 Non-clocked sequential cell  
-The clock pin sec_digit2/digit_reg[3]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#33 Critical Warning
-Non-clocked sequential cell  
-The clock pin sec_get_clk/clk_counter_reg[0]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#34 Critical Warning
-Non-clocked sequential cell  
-The clock pin sec_get_clk/clk_counter_reg[1]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#35 Critical Warning
-Non-clocked sequential cell  
 The clock pin sec_get_clk/clk_counter_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-17#36 Critical Warning
+TIMING-17#33 Critical Warning
 Non-clocked sequential cell  
 The clock pin sec_get_clk/clk_out_reg/C is not reached by a timing clock
 Related violations: <none>

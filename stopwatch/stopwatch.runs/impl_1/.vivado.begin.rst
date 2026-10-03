@@ -1,90 +1,20 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ddebr" Host="LAPTOPDEDYLAN" Pid="54044" HostCore="16" HostMemory="033960665088">
+    <Process Command="vivado.bat" Owner="ddebr" Host="LAPTOPDEDYLAN" Pid="52808" HostCore="16" HostMemory="033960665088">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ddebr" Host="LAPTOPDEDYLAN" Pid="30848" HostCore="16" HostMemory="033960665088">
+    <Process Command="vivado.bat" Owner="ddebr" Host="LAPTOPDEDYLAN" Pid="11860" HostCore="16" HostMemory="033960665088">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ddebr" Host="LAPTOPDEDYLAN" Pid="34248" HostCore="16" HostMemory="033960665088">
+    <Process Command="vivado.bat" Owner="ddebr" Host="LAPTOPDEDYLAN" Pid="43392" HostCore="16" HostMemory="033960665088">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ddebr" Host="LAPTOPDEDYLAN" Pid="22268" HostCore="16" HostMemory="033960665088">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ddebr" Host="LAPTOPDEDYLAN" Pid="10304" HostCore="16" HostMemory="033960665088">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ddebr" Host="LAPTOPDEDYLAN" Pid="19464" HostCore="16" HostMemory="033960665088">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ddebr" Host="LAPTOPDEDYLAN" Pid="19572" HostCore="16" HostMemory="033960665088">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ddebr" Host="LAPTOPDEDYLAN" Pid="16976" HostCore="16" HostMemory="033960665088">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ddebr" Host="LAPTOPDEDYLAN" Pid="42824" HostCore="16" HostMemory="033960665088">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ddebr" Host="LAPTOPDEDYLAN" Pid="15920" HostCore="16" HostMemory="033960665088">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ddebr" Host="LAPTOPDEDYLAN" Pid="54324" HostCore="16" HostMemory="033960665088">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ddebr" Host="LAPTOPDEDYLAN" Pid="20700" HostCore="16" HostMemory="033960665088">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ddebr" Host="LAPTOPDEDYLAN" Pid="396" HostCore="16" HostMemory="033960665088">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ddebr" Host="LAPTOPDEDYLAN" Pid="37036" HostCore="16" HostMemory="033960665088">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ddebr" Host="LAPTOPDEDYLAN" Pid="50016" HostCore="16" HostMemory="033960665088">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ddebr" Host="LAPTOPDEDYLAN" Pid="29260" HostCore="16" HostMemory="033960665088">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ddebr" Host="LAPTOPDEDYLAN" Pid="34568" HostCore="16" HostMemory="033960665088">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ddebr" Host="LAPTOPDEDYLAN" Pid="47604" HostCore="16" HostMemory="033960665088">
+    <Process Command="vivado.bat" Owner="ddebr" Host="LAPTOPDEDYLAN" Pid="40540" HostCore="16" HostMemory="033960665088">
     </Process>
 </ProcessHandle>

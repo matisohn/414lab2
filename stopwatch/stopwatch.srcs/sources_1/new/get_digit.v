@@ -20,24 +20,22 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module get_digit #(parameter MAX = 9) (
+module get_digit (
     input clk,
     input rst,
-    output reg [3:0] digit,
-    output reg carry
+    input [NBIT-1:0] limit,
+    output reg [3:0] digit
     );
     
+    parameter NBIT = 9;
     always @(posedge clk or posedge rst) begin
         if(rst) begin
-            digit <= 0;
-            carry <= 0;
+            digit <= 4'b0000;
         end else begin
-            if (digit == MAX)begin
-                digit <= 0;
-                carry <= 1;
+            if (digit == limit)begin
+                digit <= 4'b0000;
             end else begin  
-                digit <= digit + 1;
-                carry <= 0;
+                digit <= digit + 1'b1;
             end
         end
     end

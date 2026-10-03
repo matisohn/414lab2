@@ -33,7 +33,7 @@ module sev_seg_with_clk(
 	 
 	 reg [1:0] sel ;
 	 
-	 assign led_disable = 4'b1111;		// disable other 5 digits
+	 assign led_disable = 4'b1111;		// disable other 4 digits
 	 
 	 // We will toggle the register "sel" at every rising clock edge
 	 // This register will be used to switch the display between two displays
@@ -48,15 +48,15 @@ module sev_seg_with_clk(
 		end
 		else										// If reset button is not pressed
 		begin
-			sel = (sel == 2'd2) ? 2'd0 : sel + 2'd1;							// sel signal is toggled
+			sel = sel + 2'd1;    // 0 -> 1 -> 2 -> 3 -> 0 ...;							// sel signal is toggled
 			if(sel == 3)
-				led_enable = 3'b0111;		// if sel = 1, then the second display from left is turned on
+				led_enable = 4'b0111;		// if sel = 1, then the second display from left is turned on
 			else if(sel == 2)
-			    led_enable = 3'b1011; 
+			    led_enable = 4'b1011; 
 			else if (sel == 1)
-				led_enable = 3'b1101;			// if sel = 0, then the leftmost display is turned on
+				led_enable = 4'b1101;			// if sel = 0, then the leftmost display is turned on
 		    else 
-		        led_enable = 3'b1110;
+		        led_enable = 4'b1110;
 		end				
 	 end
 	 

@@ -33,72 +33,80 @@ module StopwatchTOP(
     
     
     // Instantiation of the clock generator from IP Core Generator
-    wire clk_5MHz;
+    wire msCLK;
+    wire secCLK;
+    wire tenSecCLK;
+    wire minCLK;
+    
+    wire [3:0] msDigit;
+    wire [3:0] secDigit1;
+    wire [3:0] secDigit2;
+    wire [3:0] minDigit;
+
 // Instantiation of the clock generator from IP Core Generator
 	ip_clock_div_top clk_5M(				// generated core to obtain a slower clk of 5MHz from onboard 100 MHz oscillator.
 	   .clk_in1(board_clk),      	// we assign the external 100 MHz clock to clk_main
 	   .clk_out1(clk_5MHz));    	// we assign the generated 5 MHz clock to clk_slw
 
-    wire msCLK, secCLK, minCLK;
+
     // 10 HZ clock comes out (ms)
     get_clk ms_get_clk(
                         .clk_slw(clk_5MHz),
                         .reset(reset), 
-                        .stop(1'b0), 
-                        .limit(250000), 
+                        .stop(on_switch), 
+                        .limit(18'd250000), 
                         .clk_out(msCLK));
+    get_digit #(4) ms_digit(
+                        .clk(msCLK),
+                        .rst(reset),
+                        .digit(msDigit),
+                        .limit(9));    //  1 HZ clock comes out (s)
                         
-    //  1 HZ clock comes out (s)
+                        
     get_clk #(3) sec_get_clk(
                     .clk_slw(msCLK),
                     .reset(reset), 
-                    .stop(1'b0), 
-                    .limit(5), 
+                    .stop(on_switch), 
+                    .limit(3'd5), 
                     .clk_out(secCLK));
-                    
+    get_digit #(4) sec_digit1(
+                    .clk(secCLK),
+                    .rst(reset),
+                    .digit(secDigit1),
+                    .limit(9));  
+                                      
     // 1/10 HZ clock comes out    
     get_clk #(3) sec2_get_clk(
                     .clk_slw(secCLK),
                     .reset(reset), 
-                    .stop(1'b0), 
-                    .limit(5), 
+                    .stop(on_switch), 
+                    .limit(3'd5), 
                     .clk_out(tenSecCLK));
-    
+    get_digit #(3) sec_digit2(
+                    .clk(tenSecCLK),
+                    .rst(reset),
+                    .digit(secDigit2),
+                    .limit(3'd5));
+                    
     // 1/60 HZ clock comes out (min)     
-    get_clk #(5) min_get_clk(
-                .clk_slw(secCLK),
-                .reset(reset), 
-                .stop(1'b0), 
-                .limit(30), 
+    get_clk #(2) min_get_clk(
+                    .clk_slw(tenSecCLK),
+                    .reset(reset), 
+                    .stop(on_switch), 
+                    .limit(2'd3), 
                 .clk_out(minCLK));
-
-    
+    get_digit #(4) min_digit(
+                    .clk(minCLK),
+                    .rst(reset),
+                    .digit(minDigit),
+                    .limit(9));    
     // GET DIGITS 
-    wire [3:0] msDigit, secDigit1, secDigit10s, minDigit;
-    wire tenthsSec;
-    get_digit ms_digit(
-                .clk(msCLK),
-                .rst(reset),
-                .digit(msDigit),
-                .carry());
-    
-    get_digit sec_digit1(
-            .clk(secCLK),
-            .rst(reset),
-            .digit(secDigit1),
-            .carry());
 
-    get_digit #(6) sec_digit2(
-            .clk(tenSecCLK),
-            .rst(reset),
-            .digit(secDigit2),
-            .carry());
+    
+    
             
-    get_digit min_digit(
-            .clk(minCLK),
-            .rst(reset),
-            .digit(minDigit),
-            .carry());
+
+
             
     // DISPLAY
     sev_seg_with_clk_top display(

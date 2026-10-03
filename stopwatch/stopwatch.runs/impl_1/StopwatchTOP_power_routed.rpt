@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
-| Date             : Tue Sep 29 16:54:05 2026
+| Date             : Sat Oct  3 10:38:05 2026
 | Host             : laptopDeDylan running 64-bit major release  (build 9200)
 | Command          : report_power -file StopwatchTOP_power_routed.rpt -pb StopwatchTOP_power_summary_routed.pb -rpx StopwatchTOP_power_routed.rpx
 | Design           : StopwatchTOP
@@ -33,7 +33,7 @@ Table of Contents
 | Total On-Chip Power (W)  | 0.213        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.115        |
+| Dynamic (W)              | 0.116        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 84.0         |
@@ -53,14 +53,14 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        5 |       --- |             --- |
-| Slice Logic    |    <0.001 |      154 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       35 |     63400 |            0.06 |
-|   Register     |    <0.001 |       70 |    126800 |            0.06 |
-|   CARRY4       |    <0.001 |        9 |     15850 |            0.06 |
-|   Others       |     0.000 |       19 |       --- |             --- |
-| Signals        |    <0.001 |       99 |       --- |             --- |
+| Slice Logic    |    <0.001 |      165 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       54 |     63400 |            0.09 |
+|   Register     |    <0.001 |       67 |    126800 |            0.05 |
+|   CARRY4       |    <0.001 |       11 |     15850 |            0.07 |
+|   Others       |     0.000 |       15 |       --- |             --- |
+| Signals        |    <0.001 |       90 |       --- |             --- |
 | MMCM           |     0.086 |        1 |         6 |           16.67 |
-| I/O            |     0.028 |       18 |       210 |            8.57 |
+| I/O            |     0.029 |       19 |       210 |            9.05 |
 | Static Power   |     0.097 |          |           |                 |
 | Total          |     0.213 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
@@ -143,7 +143,7 @@ Table of Contents
 +--------------+-----------+
 | Name         | Power (W) |
 +--------------+-----------+
-| StopwatchTOP |     0.115 |
+| StopwatchTOP |     0.116 |
 |   clk_5M     |     0.086 |
 |     inst     |     0.086 |
 +--------------+-----------+

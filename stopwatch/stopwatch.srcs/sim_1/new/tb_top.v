@@ -22,27 +22,47 @@
 // Run with: run all   (the testbench calls $finish itself)
 //////////////////////////////////////////////////////////////////////////////////
 
-module tb_stopwatch;
-
-
-    // ---------------- DUT I/O ----------------
-    reg        clk = 0;
-    reg        clr_n = 1;
-    reg        btn_start = 0;
-    reg        sw_blink = 0;
-    wire [7:0] an;
-    wire [6:0] seg;
-    wire       dp;
-
-    stopwatch  uut (
-        .clk      (clk),
-        .clr_n    (clr_n),
-        .btn_start(btn_start),
-        .sw_blink (sw_blink),
-        .an       (an),
-        .seg      (seg),
-        .dp       (dp)
-    );
+module tb_stopwatch();
     
+    reg board_clk;
+    reg on_switch;
+    reg blink_switch;
+    reg reset;
+    
+    wire [7:0] seven_seg_leds;
+    wire [3:0] led_disable;
+    wire [3:0] led_enable;
+    
+    StopwatchTOP uut(.board_clk(board_clk),
+                     .on_switch(on_switch),
+                     .blink_switch(blink_switch),
+                     .reset(reset),
+                     .seven_seg_leds(seven_seg_leds),
+                     .led_disable(led_disable),
+                     .led_enable(led_enable));
+                     
+
+
+        
+// 3. Clock generation
+    initial begin
+        board_clk = 0;
+        forever #5 board_clk = ~board_clk;
+    end
+
+    // 4. Stimulus
+    initial begin
+    // initalize registers
+        board_clk = 1'b0;
+        on_switch = 1'b0;
+        blink_switch = 1'b0;
+        reset = 0;
+        #100 reset = 0;      // Release reset
+        #200 on_switch = 1;      // Start timing
+        #500 on_switch = 0;      // Stop timing
+        #100 $finish;
+       
+    
+    end
     
 endmodule

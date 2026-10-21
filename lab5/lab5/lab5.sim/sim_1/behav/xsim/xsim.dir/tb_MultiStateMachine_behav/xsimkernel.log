@@ -1,0 +1,4 @@
+Running: xsim.dir/tb_MultiStateMachine_behav/xsimk.exe -simmode gui -wdb tb_MultiStateMachine_behav.wdb -simrunnum 0 -socket 53248
+Design successfully loaded
+Design Loading Memory Usage: 19380 KB (Peak: 19380 KB)
+Design Loading CPU Usage: 155 ms

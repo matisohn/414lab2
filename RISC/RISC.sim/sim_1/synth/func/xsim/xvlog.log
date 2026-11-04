@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/lab5/RISC/RISC.sim/sim_1/synth/func/xsim/tb_Register_File_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_File
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/lab5/RISC/RISC.srcs/sim_1/new/tb_Register_File.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_Register_File

@@ -33,4 +33,11 @@ module myCPU(
     output [15:0] data_to_ram,
     output enable_ram_read
     );
+    
+    
+    
+    
+    
+    
+    
 endmodule

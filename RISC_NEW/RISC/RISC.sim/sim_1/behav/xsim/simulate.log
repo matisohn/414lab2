@@ -1,0 +1,7 @@
+Time resolution is 1 ps
+TEST 1: reset
+TEST 2: reset priority over branch/jump/JR
+TEST 3: exhaustive BrCode sweep, data set A
+TEST 4: exhaustive BrCode sweep, data set B
+TEST 4b: exhaustive BrCode sweep, data set C
+TEST 5: all code-to-code transitions

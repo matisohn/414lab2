@@ -8,11 +8,7 @@
 module PC(
     input clk,
     input reset,
-    input Z_in,
-    input BC_in,
-    input JB_in,
-    input MA_in,
-    input PL_in,
+    input [3:0] branch_control_codes, // {JB, BC, Z, MA}
     input [15:0] PC_plus_one,
     input [15:0] BrA_in,
     input [15:0] Rsa_in,
@@ -20,8 +16,8 @@ module PC(
 );
 
 reg [15:0] block;
-wire [3:0] BrCode = {JB_in, BC_in, Z_in, MA_in};
-wire [2:0] JuCode = {JB_in, BC_in, MA_in};
+wire [3:0] BrCode = branch_control_codes; // {JB, BC, Z, MA}
+wire [2:0] JuCode = {branch_control_codes[3:2], branch_control_codes[0]}; // {JB, BC, MA}
 
 //Branch control Behavioral logic
 always @(*) 

@@ -1,0 +1,7 @@
+verilog xil_defaultlib -i "C:/AMDDesignTools/2026.1/Vivado/data/rsb/busdef" \
+"../../../../RISC.gen/sources_1/ip/ip_rom_input_code/sim/ip_rom_input_code.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

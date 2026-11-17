@@ -1,0 +1,2 @@
+ip_ram_output_code.v,verilog,xil_defaultlib,../../../../RISC.gen/sources_1/ip/ip_ram_output_code/sim/ip_ram_output_code.v,incdir="C:/AMDDesignTools/2026.1/Vivado/data/rsb/busdef"
+glbl.v,Verilog,xil_defaultlib,glbl.v

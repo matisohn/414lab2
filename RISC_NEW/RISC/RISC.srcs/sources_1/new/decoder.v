@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module instruction_decoder (
+module Instruction_Decoder (
     input      [15:0] instruction,   // [15:9] opcode, [8:6] DR, [5:3] SA, [2:0] SB
 
     output reg [3:0] DA,             // destination register address
